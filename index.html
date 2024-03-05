@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rev's Restaurant</h1>
+            <nav>
+                <ul>
+                    <li>Main Menu</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="menu-images">
+                <div class="menu-images">
+                    <div class="image-container">
+                        <img src="Pork-Sisig-2.jpg" alt="Menu 1" data-description="Sizzling pork dish - Pork Sisig" data-history="Pork Sisig is a popular Filipino dish believed to have originated from Pampanga. It is typically made from chopped pig's face and liver, seasoned with calamansi, onions, and chili peppers." onclick="showImageDescription(this)">
+                        <div class="image-name">Pork Sisig</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="karekare.jpg" alt="Menu 2" data-description="Filipino stew with peanut sauce - Kare-Kare" data-history="Kare-Kare is a Filipino stew made with oxtail, tripe, and vegetables cooked in a thick peanut sauce. It is often served during special occasions and celebrations." onclick="showImageDescription(this)">
+                        <div class="image-name">Kare-Kare</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="sinigeng.jpg" alt="Menu 3" data-description="Sour soup with meat and vegetables - Sinigang" data-history="Sinigang is a Filipino sour soup made with meat (often pork), vegetables, and tamarind broth. It is known for its tangy and savory flavor." onclick="showImageDescription(this)">
+                        <div class="image-name">Sinigang</div>
+                    </div>
+                    <div class="image-container">
+                        <img src="adobow.jpg" alt="Menu 4" data-description="Filipino stew with meat, soy sauce, and vinegar - Adobo" data-history="Adobo is a popular Filipino dish made with meat (commonly chicken or pork), soy sauce, vinegar, garlic, and spices. It is often considered the national dish of the Philippines." onclick="showImageDescription(this)">
+                        <div class="image-name">Adobo</div>
+                    </div>
+                </div>
+                
+        </main>
+        <div id="image-modal" class="modal">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <div id="image-description" class="image-description"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
